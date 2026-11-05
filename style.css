@@ -104,3 +104,21 @@ body:before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;o
 .token-x-link small{font-size:10px;color:#b7a9c8}
 .token-x-link>b{margin-left:12px;color:#c99aff;font-size:17px}
 @media(max-width:680px){.token-x-link{margin-top:16px;padding:11px 13px}}
+
+
+/* Final polish: center the X link directly on the page background, no card/tab. */
+.token-x-link{display:flex;align-items:center;justify-content:center;gap:12px;width:max-content;max-width:100%;margin:24px auto 0;padding:8px 4px;border:0;border-radius:0;background:transparent;color:#f7f0ff;text-decoration:none;box-shadow:none;transition:opacity .2s,transform .2s}
+.token-x-link:hover{border:0;background:transparent;opacity:.82;transform:translateY(-2px)}
+.token-x-link img{width:34px;height:34px;object-fit:contain;flex:0 0 34px}
+.token-x-link span{display:flex;flex-direction:column;gap:4px;text-align:left}
+.token-x-link strong{font-size:15px;letter-spacing:.1px}
+.token-x-link small{font-size:12px;color:#b7a9c8}
+.token-x-link>b{margin-left:5px;color:#c99aff;font-size:19px}
+@media(max-width:680px){.token-x-link{margin-top:20px;padding:8px 4px}.token-x-link img{width:32px;height:32px;flex-basis:32px}.token-x-link strong{font-size:14px}.token-x-link small{font-size:11px}}
+
+/* Keep MEOW and $CAT as one compact badge cluster attached to the centered mascot. */
+.mascot-badges{position:absolute;z-index:4;left:50%;top:75%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;gap:8px;white-space:nowrap}
+.mascot-badges .art-sticker{position:relative;inset:auto;padding:8px 12px;font-size:10px;box-shadow:0 7px 20px #0006}
+.mascot-badges .sticker-one{transform:rotate(-5deg)}
+.mascot-badges .sticker-two{transform:rotate(5deg)}
+@media(max-width:680px){.mascot-badges{top:74%;gap:7px}.mascot-badges .art-sticker{padding:7px 10px;font-size:9px}}
