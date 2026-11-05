@@ -7,15 +7,81 @@
 </head>
 <body>
 <div class="noise"></div><div class="ambient a1"></div><div class="ambient a2"></div>
-<header class="topbar"><a class="wordmark" href="#home"><span class="mini-cat">🐾</span> CLANKER<span>CAT</span></a><nav><a href="#story">Story</a><a href="#token">Token</a><a href="#community">Community</a></nav><a class="nav-btn" href="#community">Join the pack ↗</a></header>
+<header class="topbar"><a class="wordmark" href="#home"><img class="brand-mascot" src="assets/clanker-cat-purple-mascot.png" alt="Clanker Cat logo"><span>CLANKER<span>CAT</span></span></a><nav><a href="#dashboard">Dashboard</a><a href="#story">Story</a><a href="#token">Token</a><a href="https://x.com/clankercat_" target="_blank" rel="noopener noreferrer">X / Social ↗</a></nav><a class="nav-btn" href="https://x.com/clankercat_" target="_blank" rel="noopener noreferrer">Follow on X ↗</a></header>
 <main id="home">
-<section class="hero shell"><div class="hero-copy"><div class="pill"><i></i> THE PURR IS ONCHAIN</div><h1>BIG PAWS.<br><span>BIG ENERGY.</span></h1><p class="lead">A little cat with a big presence. Clanker Cat is bringing playful energy to the onchain universe.</p><div class="actions"><a class="btn btn-main" href="#community">Meet the community <b>↗</b></a><a class="btn btn-ghost" href="#story">Explore the world</a></div><div class="proof"><span class="spark">✦</span> Cute by nature. Clanker by name.</div></div>
-<div class="mascot-stage"><span class="paw-stamp paw-left">🐾</span><img class="mascot" src="assets/clanker-cat-purple-mascot.png" alt="Clanker Cat mascot"><span class="paw-stamp paw-right">🐾</span><span class="mascot-caption">A LITTLE PAW-SOME ENERGY ✦</span></div></section>
+<section class="hero shell" id="home">
+  <div class="hero-intro">
+    <div class="intro-kicker"><span class="intro-star">✦</span> INTRODUCING <span class="intro-rule"></span> CLANKER CAT</div>
+    <h1><span class="hero-line-one">BIG PAWS.</span><span class="hero-line-two">BIG ENERGY.</span></h1>
+    <div class="hero-onchain"><span class="onchain-dot"></span> THE CAT IS ONCHAIN <span class="onchain-spark">✧</span></div>
+    <p class="lead">A little cat with a big presence. Bringing playful energy, purple vibes, and a little mischief to the onchain universe.</p>
+    <div class="hero-details"><span>✦ BUILT FOR THE TIMELINE</span><span>✦ POWERED BY PAWSITIVE ENERGY</span></div>
+    <div class="hero-decoration paw paw-one">🐾</div><div class="hero-decoration paw paw-two">🐾</div>
+  </div>
+  <div class="hero-art-panel">
+    <div class="hero-art-glow"></div>
+    <div class="hero-art-top"><span>CLANKER CAT / 001</span><span class="art-status"><i></i> ONCHAIN SPIRIT</span></div>
+    <img class="hero-mascot" src="assets/clanker-cat-purple-mascot.png" alt="Clanker Cat mascot">
+    <div class="hero-art-bottom"><strong>THE PURR-FECT<br>ONCHAIN COMPANION.</strong><span class="art-paw">✦</span></div>
+    <span class="art-sticker sticker-one">MEOW!</span><span class="art-sticker sticker-two">$CAT</span>
+  </div>
+</section>
 <div class="ticker"><div>CLANKER CAT　✦　PAWS ONCHAIN　✦　STAY PAWSITIVE　✦　CLANKER CAT　✦　PAWS ONCHAIN　✦　STAY PAWSITIVE　✦　</div></div>
+
+<section class="dashboard shell" id="dashboard">
+  <div class="dashboard-banner"><div class="dashboard-heading"><div class="kicker">THE $CAT CONTROL ROOM / 001</div><h2>WELCOME TO THE<br><span>CAT MARKET.</span></h2><p class="section-note">Your little corner of the onchain universe. Market stats will switch to live data when $CAT launches.</p></div><div class="dashboard-side"><div class="live-badge"><i></i><span id="data-state">PRE-LAUNCH</span></div><div class="dash-cat-stamp">🐾<small>PAWS<br>ONCHAIN</small></div><div class="dash-side-note">TRACK THE<br>CAT ENERGY <b>↘</b></div></div><div class="banner-orbit orbit-a"></div><div class="banner-orbit orbit-b"></div></div>
+  <div class="stats-grid">
+    <article class="stat-card stat-price"><div class="stat-top"><span>CAT PRICE</span><b>✦</b></div><strong id="price">—</strong><small id="price-change">Waiting for launch</small><div class="stat-squiggle">〰</div></article>
+    <article class="stat-card stat-cap"><div class="stat-top"><span>MARKET CAP</span><b>◈</b></div><strong id="market-cap">—</strong><small>USD valuation</small><div class="stat-squiggle">✧</div></article>
+    <article class="stat-card stat-liquidity"><div class="stat-top"><span>LIQUIDITY</span><b>◉</b></div><strong id="liquidity">—</strong><small>Pool depth · USD</small><div class="stat-squiggle">⌁</div></article>
+    <article class="stat-card stat-volume"><div class="stat-top"><span>24H VOLUME</span><b>↗</b></div><strong id="volume">—</strong><small>Trading activity</small><div class="stat-squiggle">〰</div></article>
+    <article class="stat-card stat-holders"><div class="stat-top"><span>HOLDERS</span><b>♧</b></div><strong id="holders">—</strong><small id="holders-note">Explorer data after launch</small><div class="stat-squiggle">✦</div></article>
+  </div>
+  <div class="market-grid">
+    <div class="chart-card"><div class="card-top"><div><span class="card-eyebrow">PRICE ACTION</span><h3>Market chart</h3></div><span class="chart-tag" id="chart-state">CHART COMING SOON</span></div><div class="chart-placeholder" id="chart-placeholder"><div class="chart-icon">⌁</div><strong>The chart will appear here</strong><p>Live chart connects automatically once the $CAT contract and trading pair are available.</p></div><iframe id="dex-chart" title="$CAT live price chart" loading="lazy" style="display:none" allow="clipboard-write" referrerpolicy="origin"></iframe></div>
+    <aside class="trade-card"><div class="card-eyebrow">THE $CAT TERMINAL</div><h3>Ready when<br>the cat is.</h3><p id="trade-description">$CAT has not launched yet. Buy and chart links will turn on after the official contract and liquidity pool are verified.</p><a class="btn btn-main trade-btn is-disabled" id="buy-button" href="#" aria-disabled="true">BUY $CAT <b>↗</b></a><a class="btn btn-ghost trade-btn is-disabled" id="chart-button" href="#" aria-disabled="true">VIEW ON DEXSCREENER</a><div class="contract-box"><span>CONTRACT ADDRESS</span><strong id="contract-address">COMING SOON</strong><button id="copy-ca" type="button" disabled> COPY </button></div><small class="safety-note">Always verify the official contract before interacting with a token.</small></aside>
+  </div>
+  <div class="data-foot"><span>Data source: DexScreener after launch</span><span id="last-updated">No live data yet</span></div>
+</section>
+
 <section class="story shell" id="story"><div class="kicker">01 / THE STORY</div><div class="story-grid"><h2>NOT HERE TO<br>BLEND IN<span>.</span></h2><div><p>Meet Clanker Cat — the purple-pawed character with curiosity in its eyes and a place in the onchain universe.</p><p class="subtle">Follow the journey, share the memes, and bring your best pawsitive energy. This is a community story, one meow at a time.</p></div></div></section>
 <section class="feature shell"><div class="feature-card"><div class="kicker">02 / THE VIBE</div><h2>ONE CAT.<br><em>ENDLESS MEOWMENTS.</em></h2><p>Built around a simple idea: make the timeline more fun. No complicated lore required — just Clanker Cat and the people who show up.</p><div class="chips"><span>✦ MEME ENERGY</span><span>✦ PURPLE UNIVERSE</span><span>✦ COMMUNITY FIRST</span></div></div><div class="feature-art"><img src="assets/clanker-cat-banner.png" alt="Clanker Cat purple space banner"></div></section>
-<section class="token shell" id="token"><div class="kicker">03 / TOKEN CORNER</div><div class="token-panel"><div><span class="token-label">THE TOKEN</span><h2>$CAT</h2><p>Official token information will be published here.</p></div><div class="token-status"><span class="status-dot"></span> DETAILS COMING SOON</div></div><p class="disclaimer">Always verify official links and contract details before interacting with any token.</p></section>
-<section class="community shell" id="community"><div class="community-box"><div class="kicker">04 / FIND YOUR PACK</div><h2>THE INTERNET<br>NEEDS MORE <em>CATS.</em></h2><p>Follow Clanker Cat and be part of the next chapter.</p><div class="actions"><a class="btn btn-main" href="https://x.com/clankercat_" target="_blank" rel="noopener noreferrer" aria-label="Follow Clanker Cat on X">Follow @clankercat_ on X ↗</a></div><small>Official X: @clankercat_</small></div></section>
-</main><footer><a class="wordmark" href="#home">✦ CLANKER<span>CAT</span></a><span>Made with 💜 and a little mischief.</span><span>© <b id="year"></b> Clanker Cat</span></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+<section class="token shell" id="token"><div class="kicker">03 / TOKEN CORNER</div><div class="token-panel"><div><span class="token-label">THE TOKEN</span><h2>$CAT</h2><p>Official token details and contract address will be published after launch.</p></div><div class="token-status"><span class="status-dot"></span> PRE-LAUNCH</div></div><p class="disclaimer">Always verify official links and contract details before interacting with any token.</p></section>
+
+</main><footer><a class="wordmark" href="#home"><img class="brand-mascot" src="assets/clanker-cat-purple-mascot.png" alt=""><span>CLANKER<span>CAT</span></span></a><span>Made with 💜 and a little mischief.</span><span>© <b id="year"></b> Clanker Cat</span></footer>
+<script>
+/* POST-LAUNCH SETUP: paste the official Base token contract address below. */
+const TOKEN_CHAIN = 'base';
+const TOKEN_CA = ''; // Example format: 0x... (leave blank until the official token is deployed)
+const $ = (id) => document.getElementById(id);
+$('year').textContent = new Date().getFullYear();
+const money = (value) => { if (value == null || !Number.isFinite(Number(value))) return '—'; const n=Number(value); return n>=1 ? '$'+n.toLocaleString('en-US',{maximumFractionDigits:2}) : '$'+n.toLocaleString('en-US',{maximumFractionDigits:8}); };
+const compact = (value) => value == null ? '—' : '$'+Number(value).toLocaleString('en-US',{notation:'compact',maximumFractionDigits:2});
+function setPrelaunch(){ $('data-state').textContent='PRE-LAUNCH'; $('last-updated').textContent='No live data yet'; }
+async function loadMarket(){
+ if(!/^0x[a-fA-F0-9]{40}$/.test(TOKEN_CA)){setPrelaunch();return;}
+ try {
+  $('data-state').textContent='CONNECTING';
+  const response=await fetch(`https://api.dexscreener.com/token-pairs/v1/${TOKEN_CHAIN}/${TOKEN_CA}`,{cache:'no-store'});
+  if(!response.ok) throw new Error('Market data unavailable');
+  const pairs=await response.json();
+  if(!Array.isArray(pairs)||!pairs.length) throw new Error('No trading pair found yet');
+  const pair=pairs.filter(p=>p.liquidity?.usd).sort((a,b)=>(b.liquidity?.usd||0)-(a.liquidity?.usd||0))[0]||pairs[0];
+  $('price').textContent=money(pair.priceUsd);
+  $('market-cap').textContent=compact(pair.marketCap ?? pair.fdv);
+  $('liquidity').textContent=compact(pair.liquidity?.usd);
+  $('volume').textContent=compact(pair.volume?.h24);
+  const change=pair.priceChange?.h24;
+  $('price-change').textContent=change==null?'24H change unavailable':`${change>=0?'+':''}${Number(change).toFixed(2)}% · 24H`;
+  $('holders').textContent='—'; $('holders-note').textContent='Holder count needs explorer data';
+  $('data-state').textContent='LIVE DATA'; $('last-updated').textContent='Updated '+new Date().toLocaleTimeString();
+  $('trade-description').textContent='Market pair detected. Check the token address and pool details carefully before using an external trading site.';
+  if(pair.url){$('buy-button').href=pair.url;$('buy-button').classList.remove('is-disabled');$('buy-button').removeAttribute('aria-disabled');$('buy-button').target='_blank';$('buy-button').rel='noopener noreferrer';$('buy-button').innerHTML='OPEN TRADING PAIR <b>↗</b>';$('chart-button').href=pair.url;$('chart-button').classList.remove('is-disabled');$('chart-button').removeAttribute('aria-disabled');$('chart-button').target='_blank';$('chart-button').rel='noopener noreferrer';}
+  if(pair.pairAddress){$('chart-placeholder').style.display='none';$('dex-chart').style.display='block';$('dex-chart').src=`https://dexscreener.com/${TOKEN_CHAIN}/${pair.pairAddress}?embed=1&theme=dark&trades=0&info=0`; $('chart-state').textContent='PAIR CONNECTED';}
+ } catch(err){$('data-state').textContent='WAITING FOR PAIR';$('last-updated').textContent=err.message;}
+}
+$('contract-address').textContent=TOKEN_CA||'COMING SOON';
+if(TOKEN_CA){$('copy-ca').disabled=false;$('copy-ca').addEventListener('click',async()=>{try{await navigator.clipboard.writeText(TOKEN_CA);$('copy-ca').textContent='COPIED';setTimeout(()=>$('copy-ca').textContent='COPY',1600);}catch(e){$('copy-ca').textContent='COPY FAILED';}});}
+loadMarket(); if(TOKEN_CA) setInterval(loadMarket,30000);
+</script>
 </body></html>
