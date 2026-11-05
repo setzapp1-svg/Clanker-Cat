@@ -69,3 +69,18 @@ body:before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;o
 .hero-copy .actions,.hero-copy .proof,.community{display:none!important}
 @media(max-width:900px){.hero{grid-template-columns:1fr 1fr;gap:22px}.hero-intro h1{font-size:clamp(48px,7vw,70px)}.hero-art-panel{height:430px}.stats-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.dashboard-banner{padding:32px}.dashboard-side{gap:16px}}
 @media(max-width:680px){.topbar{height:68px}.hero{grid-template-columns:1fr;gap:22px;padding-top:40px;padding-bottom:45px}.hero-intro{padding:14px 0 8px}.intro-kicker{font-size:9px;letter-spacing:2px}.hero-intro h1{font-size:clamp(53px,13vw,72px);letter-spacing:-3.5px;margin:25px 0 22px}.hero-line-two{margin-left:24px}.hero-intro .lead{font-size:13px;margin-top:19px}.hero-details{gap:12px;font-size:8px;margin-top:22px}.hero-art-panel{height:390px;padding:18px;border-radius:22px}.hero-mascot{width:min(78%,300px);height:min(78%,300px)}.sticker-one{top:25%;left:4%}.sticker-two{right:4%;bottom:25%}.dashboard{padding-top:70px}.dashboard-banner{min-height:250px;padding:26px 23px;border-radius:19px}.dashboard-heading h2{font-size:39px}.dashboard-heading .section-note{font-size:11px;max-width:280px}.dashboard-side{position:absolute;right:18px;top:18px;align-items:flex-end}.dashboard-side .live-badge{font-size:7px;padding:8px}.dash-cat-stamp{width:65px;height:65px;font-size:21px}.dash-cat-stamp small{font-size:5px}.dash-side-note{display:none}.banner-orbit.orbit-a{right:-190px;top:-75px}.banner-orbit.orbit-b{right:-235px;top:-115px}.stats-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.stat-card{min-height:135px;padding:15px 13px}.stat-card strong{font-size:20px}.stat-top{font-size:8px}.chart-card{padding:17px}.chart-placeholder{height:265px}.trade-card{padding:20px}.trade-card h3{font-size:28px}.section-head{align-items:flex-start}.story{padding-top:80px;padding-bottom:70px}.story-grid{gap:10px}.feature-card{padding:25px}.feature-art{min-height:220px}.token{padding-top:75px;padding-bottom:65px}footer{gap:12px;font-size:9px}}
+
+/* Hero headline alignment fix: keep both lines on the same left edge and fully visible. */
+.hero-intro{min-width:0;overflow:visible}
+.hero-intro h1{max-width:100%;font-size:clamp(48px,6vw,76px);letter-spacing:-3.5px;line-height:1.02;overflow:visible}
+.hero-line-one,.hero-line-two{display:block;margin-left:0!important;white-space:nowrap;max-width:100%}
+@media(max-width:680px){
+  .hero-intro h1{font-size:clamp(38px,10.2vw,58px);letter-spacing:-2.4px;line-height:1.06}
+  .hero-line-one,.hero-line-two{margin-left:0!important}
+}
+
+/* Built on Base via Clanker platform badge */
+.built-badge{display:inline-flex;align-items:center;gap:9px;margin-top:14px;padding:9px 13px;border:1px solid #6b8cff55;border-radius:999px;background:linear-gradient(100deg,#2456d51c,#a45cff12);color:#c9c4e6;font:700 9px Syne,sans-serif;letter-spacing:1.5px;box-shadow:0 7px 22px #0002}
+.built-badge .base-mark{width:21px;height:21px;display:grid;place-items:center;border-radius:50%;background:#315fe8;color:#fff;font:800 13px Arial,sans-serif;letter-spacing:0;box-shadow:0 0 14px #315fe855}
+.built-badge strong{color:#f0e5ff}.built-badge i{width:3px;height:3px;border-radius:50%;background:#9c8ab4;margin:0 2px}
+@media(max-width:680px){.built-badge{font-size:8px;gap:7px;padding:8px 11px;margin-top:12px}}
