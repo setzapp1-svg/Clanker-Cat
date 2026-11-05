@@ -84,3 +84,10 @@ body:before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;o
 .built-badge .base-mark{width:21px;height:21px;display:grid;place-items:center;border-radius:50%;background:#315fe8;color:#fff;font:800 13px Arial,sans-serif;letter-spacing:0;box-shadow:0 0 14px #315fe855}
 .built-badge strong{color:#f0e5ff}.built-badge i{width:3px;height:3px;border-radius:50%;background:#9c8ab4;margin:0 2px}
 @media(max-width:680px){.built-badge{font-size:8px;gap:7px;padding:8px 11px;margin-top:12px}}
+
+
+/* Refined hero headline: compact and balanced like the story section heading. */
+.hero-intro h1{font-size:clamp(36px,4.2vw,52px)!important;letter-spacing:-2px!important;line-height:1.08!important;margin:25px 0 20px!important;gap:2px!important}
+.hero-line-one,.hero-line-two{white-space:normal!important}
+.built-badge .base-logo{width:23px;height:23px;display:block;object-fit:contain;border-radius:6px;background:#fff;flex:0 0 23px}
+@media(max-width:680px){.hero-intro h1{font-size:clamp(32px,8.5vw,43px)!important;letter-spacing:-1.5px!important;line-height:1.1!important;margin:22px 0 18px!important}.built-badge .base-logo{width:21px;height:21px;flex-basis:21px}}
