@@ -53,7 +53,7 @@
 <script>
 /* POST-LAUNCH SETUP: paste the official Base token contract address below. */
 const TOKEN_CHAIN = 'base';
-const TOKEN_CA = '0x921A81C08F4932246dA10085a08926ac89d0CccC'; // Official $CAT contract on Base
+const TOKEN_CA = '0x9dfbfdaf080380437d1134fb32a0a743dd26cccc'; // Official $CAT contract on Base
 const $ = (id) => document.getElementById(id);
 $('year').textContent = new Date().getFullYear();
 const money = (value) => { if (value == null || !Number.isFinite(Number(value))) return '—'; const n=Number(value); return n>=1 ? '$'+n.toLocaleString('en-US',{maximumFractionDigits:2}) : '$'+n.toLocaleString('en-US',{maximumFractionDigits:8}); };
